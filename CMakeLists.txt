@@ -6,4 +6,8 @@ set(CMAKE_C_STANDARD 11)
 
 include_directories(include)
 
-add_executable(FChip8 src/main.c)
+add_executable(FChip8
+        src/main.c
+        src/chip8.c
+        src/chip8disasm.c
+        )
