@@ -10,4 +10,6 @@ add_executable(FChip8
         src/main.c
         src/chip8.c
         src/chip8disasm.c
-        )
+        src/chip8sdl.c)
+
+target_link_libraries(FChip8 SDL2)

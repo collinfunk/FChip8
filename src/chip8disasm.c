@@ -198,7 +198,7 @@ void chip8_disassemble(const char* filename, FILE* output_stream) {
             case 0xF: /* 0xFX??, other misc ops */
                 chip8_disassemble_fxxx(i, opcode, output_stream);
                 break;
-            default: /* Unknown opcodes (note only original chip8 opcodes are supported, some roms use more */
+            default: /* Unknown opcodes (note only original Chip8 opcodes are supported, some roms use more */
                 fprintf(output_stream, "ADDR %#04zx: UNKNOWN OPCODE\n", i);
                 break;
         }
